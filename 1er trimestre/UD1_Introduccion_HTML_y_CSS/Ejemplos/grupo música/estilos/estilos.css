@@ -1,0 +1,23 @@
+html {
+    background-color: #ffc0cb;
+}
+
+header {
+    background-color: #00ffff;
+    border: 1px solid #a52a2a;
+    
+}
+
+header > h1 {
+    background-color: #ffff00;
+    padding: 30px 900px 150px 10px;
+    border: 1px solid #000;
+}
+
+strong {
+    background-color: #7FF007;
+}
+
+aside {
+    background-color: rgba(0,0,255,0.5);
+}
