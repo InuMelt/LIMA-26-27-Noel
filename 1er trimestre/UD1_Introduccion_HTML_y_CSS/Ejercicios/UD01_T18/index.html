@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Noel">
+    <meta name="description" value="UD01_T18">
+    <meta name="keywords" value="html">
+    <title>Ejercicio 18</title>
+    <style>
+        input {
+            background-color: #aaa;
+            border: none;
+        }
+
+        label > input:focus {
+            border: 2px solid #00f;
+            color: #007;
+        }
+
+        input:valid {
+            background-color: #0f0;
+            color: #070;
+        }
+
+        input:invalid {
+            background-color: #f00;
+            color: #700;
+        }
+
+        input:required:placeholder-shown {
+            background-color: rgba(200, 200, 255, 1);
+        }
+
+
+
+        fieldset {
+            border: 0.5px solid #777;
+            border-radius: 4px;
+            font-size: larger;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>1. Datos personales</legend>
+        <label for="nombre">
+            Nombre: 
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="40" placeholder="Tu nombre" required>
+        </label>
+        <br>
+        <label for="apellidos">
+            Apellidos:
+            <input type="text" id="apellidos" name="apellidos" minlength="3" maxlength="60" placeholder="Tus apellidos" required>
+        </label>
+        <br>
+        <label for="pass">
+            Contraseña: 
+            <input type="password" id="pass" name="pass" minlength="8" maxlength="20" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d\W_]{8,20}$" placeholder="8-20 caracteres" required>
+        </label>
+        <br>
+        <label for="email">
+            Correo electrónico: 
+            <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+        </label>
+        <br>
+        <label for="tel">
+            Teléfono: 
+            <input type="tel" id="tel" name="tel" minlength="9" maxlength="9" placeholder="123456789">
+        </label>
+        <br>
+        <label for="bd">
+            Fecha de nacimiento: 
+            <input type="date" id="bd" name="bd" min="1950-01-01" max="2010-12-31" required>
+        </label>
+        <br>
+        <label for="edad">
+            Edad: 
+            <input type="number" id="edad" name="edad" min="14" max="100" placeholder="Edad en required">
+        </label>
+        <br>
+        <label for="busq">
+            Buscar un taller: 
+            <input type="search" id="busq" name="busq" placeholder="Ej. programación">
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>2. Inscripción</legend>
+        <label for="fechainscripcion">
+            Fecha y hora de inscripción: 
+            <input type="datetime-local" id="fechainscripcion" name="fechainscripcion" min="2026-01-01" max="2027-12-31" required>
+        </label>
+        <br>
+        <label for="mes">
+            Mes preferido: 
+            <input type="month" id="mes" name="mes" min="2027-01" max="2027-12">
+        </label>
+        <br>
+        <label for="semana">
+            Semana preferida: 
+            <input type="week" id="semana" name="semana" min="2027-01" max="2027-52">
+        </label>
+        <br>
+        <label for="hora">
+            Hora preferida: 
+            <input type="time" id="hora" name="hora" min="09:00" max="20:00" required>
+        </label>
+        <br>
+        <label for="modalidad">
+            Modalidad de asistencia: 
+            <br>
+            Presencial
+            <input type="radio" id="modalidad" name="modalidad" value="Presencial" checked>
+            Oline
+            <input type="radio" id="modalidad" name="modalidad" value=" Online">
+        </label>
+        <br>
+        <label for="tallint">
+            Talleres de interés: 
+            <br>
+            Programación:
+            <input type="checkbox" id="tallint" name="tallint" value="Programación">
+            Redes: 
+            <input type="checkbox" id="tallint" name="tallint" value="Redes">
+            Diseño web:
+            <input type="checkbox" id="tallint" name="tallint" value="Web">
+        </label>
+        <br>
+        <label for="sesiones">
+            Número de sesiones: 
+            <input type="range" id="sesiones" name="sesiones" min="1" max="10">
+        </label>
+        <br>
+        <label for="DNI">
+            Documento identificativo (PDF): 
+            <input type="file" id="DNI" name="DNI" accept="PDF">
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>3. Información adicional</legend>
+        <label for="web">
+            Página web personal: 
+            <input type="url" id="web" name="web" placeholder="https://ejemplo.com">
+        </label>
+        <br>
+        <label for="code">
+            Código de invitación: 
+            <input type="text" id="code" name="code" pattern="[a-zA-Z0-9]{4,8}" placeholder="EJ: AB12">
+        </label>
+        <br>
+        <label for="color">
+            Color preferido: 
+            <input type="color" id="color" name="color">
+        </label>
+        <br>
+        <label for="comentarios">
+            Comentarios: 
+            <textarea id="comentarios" name="comentarios" maxlength="300" placeholder="Escribe tus comentarios"></textarea>
+        </label>
+    </fieldset>
+    <label for="hidden">
+        <input type="hidden" id="hidden" name="hidden" value="CAMP2027-01/12">
+    </label>
+    <label for="botones">
+        <input type="button" id="botones" name="botones" value="Consultar disponibilidad">
+        <input type="submit" id="botones" name="botones" value="Enviar inscripción">
+        <input type="reset" id="botones" name="botones">
+    </label>
+    </form>
+</body>
+</html>

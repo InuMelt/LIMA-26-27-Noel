@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    width: 500px; 
+}
+
+tr {
+    height: 40px;
+}
+
+tr td {
+    border: 4px solid #000;
+}
+
+tr:nth-child(7n  + 1) td {
+    background-color: #f00;
+}
+
+tr:nth-child(7n  + 2) td {
+    background-color: #fa0;
+}
+
+tr:nth-child(7n  + 3) td {
+    background-color: #ff0;
+}
+
+tr:nth-child(7n  + 4) td {
+    background-color: #0b5;
+}
+
+tr:nth-child(7n  + 5) td {
+    background-color: #0bf;
+}
+
+tr:nth-child(7n  + 6) td {
+    background-color: #07c;
+}
+
+tr:nth-child(7n) td {
+    background-color: #73a;
+}
