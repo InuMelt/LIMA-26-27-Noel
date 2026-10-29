@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Noel">
+    <meta name="description" content="Ejercicio 13 T1">
+    <meta name="keywords" content="html">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="nombre">
+            Nombre: 
+            <input type="text" name="nombre" minlength="3" maxlength="30" pattern="^[A-Z][a-zA-Z \-]" required>
+        </label>
+        <br>
+        <label for="apelidos">
+            Apellidos: 
+            <input type="text" name="apelidos" minlength="3" maxlength="50" pattern="^[A-Z][a-zA-Z \-]" required>
+        </label>
+         <br>
+        <label for="email">
+            Correo Electrónico: 
+            <input type="email" name="email" required>
+        </label>
+         <br>
+        <label for="Idade">
+            Idade: 
+            <input type="number" name="Idade" min="16" max="99" required>
+        </label>
+         <br>
+        <label for="telefono">
+            Teléfono: 
+            <input type="number" name="telefono" minlength="9" maxlength="9">
+        </label>
+         <br>
+        <label for="codpost">
+            Código Postal: 
+            <input type="number" name="codpost" minlength="5" maxlength="5" required>
+        </label>
+         <br>
+        <label for="irmans">
+            Irmáns: 
+            <input type="number" name="irmans" min="0" max="15">
+        </label>
+         <br>
+        <label for="web">
+            Páxina web: 
+            <input type="url" name="web">
+        </label>
+        <br>
+        <label for="enviar">
+            <input type="submit" name="enviar">
+        </label>
+        <label for="reset">
+            <input type="reset" name="reset">
+        </label>
+    </form>
+</body>
+</html>

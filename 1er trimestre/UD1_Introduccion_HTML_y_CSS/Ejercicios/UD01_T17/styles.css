@@ -1,0 +1,114 @@
+:root {
+  --marfil: #f7f0df;
+  --papel: #fffaf0;
+  --beixe: #eee0c5;
+  --beixe-escuro: #dfc79d;
+  --ocre: #a77736;
+  --ocre-escuro: #68451f;
+  --tinta: #352819;
+  --tinta-suave: #6e5a42;
+  --borde: #b89a6b;
+  --hover: #f0d49a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    background-color: var(--marfil);
+    color: var(--tinta);
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    color: var(--ocre-escuro);
+    text-shadow: 2px 2px 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    font: 3em;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: var(--papel);
+    color: var(--tinta);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+caption {
+    font-style: italic;
+    color: var(--tinta-suave);
+    padding: 10px;
+    caption-side: bottom;
+    text-align: center;
+}
+
+thead tr:first-child th {
+    background-color: var(--ocre-escuro);
+}
+
+thead tr:first-child th:nth-child(4) {
+    background-color: var(--ocre);
+}
+
+thead tr:nth-child(2) {
+    background-color: var(--beixe-escuro);
+}
+
+th, td {
+    border: 1px solid var(--borde);
+        text-align: center;
+    vertical-align: middle;
+}
+
+tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--ocre);
+    color: var(--papel);
+    font-weight: bold;
+    border: 1px solid var(--borde);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--papel);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--beixe);
+}
+
+tbody tr:hover {
+    background-color: var(--hover);
+}
+
+td img {
+    width: 45px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--ocre-escuro);
+    display: block;
+    margin: 0 auto;
+}
+
+tfoot tr:first-child th {
+    background-color: var(--ocre);
+    color: var(--papel);
+    font-weight: bold;
+    border: 1px solid var(--ocre-escuro);
+    text-align: center;
+}
+
+tfoot tr td {
+    background-color: var(--beixe-escuro);
+    color: var(--tinta);
+    font-weight: bold;
+}
+
+tfoot tr td:first-child {
+    text-align: left;
+}

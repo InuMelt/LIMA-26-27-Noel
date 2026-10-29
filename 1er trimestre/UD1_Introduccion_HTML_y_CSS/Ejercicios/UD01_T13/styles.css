@@ -1,0 +1,17 @@
+input:required:valid {
+    background-color: #0f0;
+    border: 2px, solid, #0f0
+}
+
+input:required:invalid {
+    background-color: #f00;
+    border: 2px, solid, #f00;
+}
+
+input:valid {
+    border: 2px, solid, #0f0
+}
+
+input:invalid {
+    border: 2px, solid, #f00
+}
