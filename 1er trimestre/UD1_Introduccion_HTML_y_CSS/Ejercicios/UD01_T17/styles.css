@@ -29,7 +29,6 @@ h1 {
 }
 
 table {
-    border-collapse: collapse;
     background-color: var(--papel);
     color: var(--tinta);
     width: 100%;
@@ -59,12 +58,20 @@ thead tr:nth-child(2) {
 
 th, td {
     border: 1px solid var(--borde);
+    border-bottom: 2px dotted var(--tinta-suave);
+    border-right: 1px dotted var(--tinta-suave);
         text-align: center;
     vertical-align: middle;
 }
 
 tbody tr td:nth-child(2) {
     text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+
+tbody tr td:nth-child(3) {
+    font-style: italic;
 }
 
 thead th {
@@ -90,9 +97,11 @@ td img {
     width: 45px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid var(--ocre-escuro);
+    border: 2px solid var(--borde);
     display: block;
     margin: 0 auto;
+    padding: 2px;
+    background-color: var(--marfil);
 }
 
 tfoot tr:first-child th {
