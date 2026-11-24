@@ -12,11 +12,6 @@
             border: none;
         }
 
-        label > input:focus {
-            border: 2px solid #00f;
-            color: #007;
-        }
-
         input:valid {
             background-color: #0f0;
             color: #070;
@@ -28,10 +23,13 @@
         }
 
         input:required:placeholder-shown {
-            background-color: rgba(200, 200, 255, 1);
+            background-color: #ccf;
         }
 
-
+        input:focus {
+            border: 2px solid #00f;
+            color: #007;
+        }
 
         fieldset {
             border: 0.5px solid #777;
